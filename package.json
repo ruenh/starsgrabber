@@ -1,0 +1,31 @@
+{
+  "name": "starsgrabber",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:https": "cross-env HTTPS=true vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.13.6",
+    "@tma.js/sdk-solid": "^3.0.8",
+    "@tonconnect/ui": "^2.0.5",
+    "axios": "^1.13.2",
+    "eruda": "^3.0.1",
+    "lottie-web": "^5.13.0",
+    "solid-js": "^1.9.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.11",
+    "vite-plugin-mkcert": "^1.17.6",
+    "vite-plugin-solid": "^2.10.2",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
+}
