@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from "express";
 import { NotificationController } from "../controllers/notificationController.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 const router = Router();
 

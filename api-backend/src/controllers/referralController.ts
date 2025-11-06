@@ -3,7 +3,7 @@ import {
   getReferralStats,
   generateReferralLink,
 } from "../services/referralService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 const BOT_USERNAME = process.env.BOT_USERNAME || "stars_grabber_bot";
 

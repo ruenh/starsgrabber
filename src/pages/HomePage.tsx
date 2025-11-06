@@ -20,18 +20,21 @@ export const HomePage: Component = () => {
     setSelectedTask(null);
   };
 
-  const [refreshKey, setRefreshKey] = createSignal(0);
+  const [refreshTrigger, setRefreshTrigger] = createSignal(0);
 
   const handleTaskCompleted = () => {
     // Trigger task list refresh without full page reload
-    setRefreshKey((prev) => prev + 1);
+    setRefreshTrigger((prev) => prev + 1);
   };
 
   return (
     <div class="page">
       <Header showAdminButton={isAdmin()} />
       <BannerCarousel />
-      <TaskList key={refreshKey()} onTaskClick={handleTaskClick} />
+      <TaskList
+        refreshTrigger={refreshTrigger()}
+        onTaskClick={handleTaskClick}
+      />
       <TaskModal
         task={selectedTask()}
         isOpen={isModalOpen()}

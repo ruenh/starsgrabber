@@ -2,7 +2,6 @@ import { Bot } from "grammy";
 import express from "express";
 import dotenv from "dotenv";
 import logger from "./utils/logger.js";
-import { supabase } from "./config/supabase.js";
 import notificationRoutes from "./routes/notificationRoutes.js";
 import verificationRoutes from "./routes/verificationRoutes.js";
 import { BotActivationService } from "./services/botActivationService.js";
@@ -22,7 +21,7 @@ const app = express();
 app.use(express.json());
 
 // Health check endpoint
-app.get("/health", (req, res) => {
+app.get("/health", (_req, res) => {
   res.json({ status: "ok", service: "bot-backend" });
 });
 

@@ -1,6 +1,6 @@
 import { supabase } from "../config/supabase.js";
 import { Withdrawal, Task } from "../types/index.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 import axios from "axios";
 import { updateUserBalance } from "./transactionService.js";
 

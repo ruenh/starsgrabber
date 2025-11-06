@@ -4,7 +4,7 @@ import {
   getUserWithdrawals,
 } from "../services/withdrawalService.js";
 import { NotificationService } from "../services/notificationService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 import { supabase } from "../config/supabase.js";
 
 /**

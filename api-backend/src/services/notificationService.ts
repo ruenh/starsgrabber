@@ -1,5 +1,5 @@
 import axios from "axios";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 const BOT_BACKEND_URL = process.env.BOT_BACKEND_URL || "http://localhost:3001";
 const INTERNAL_API_KEY = process.env.INTERNAL_API_KEY || "";

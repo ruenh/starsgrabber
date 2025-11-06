@@ -6,7 +6,7 @@ import {
   deleteBanner,
   getAllBanners,
 } from "../services/bannerService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Get all active banners

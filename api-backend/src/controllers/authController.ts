@@ -7,7 +7,7 @@ import {
 } from "../services/userService.js";
 import { generateToken } from "../utils/jwt.js";
 import { TelegramUser } from "../types/auth.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Login/Register endpoint

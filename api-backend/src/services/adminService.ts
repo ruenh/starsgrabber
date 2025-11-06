@@ -1,6 +1,6 @@
 import { supabase } from "../config/supabase.js";
 import { Task, Withdrawal, User } from "../types/index.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 import { updateUserBalance } from "./transactionService.js";
 
 /**

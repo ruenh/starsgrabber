@@ -6,7 +6,7 @@ import {
 } from "../utils/telegram.js";
 import { verifyToken } from "../utils/jwt.js";
 import { JWTPayload } from "../types/auth.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 // Extend Express Request type to include user
 declare global {

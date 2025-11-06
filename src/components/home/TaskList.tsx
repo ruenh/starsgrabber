@@ -1,10 +1,18 @@
-import { Component, createSignal, onMount, For, Show } from "solid-js";
+import {
+  Component,
+  createSignal,
+  createEffect,
+  onMount,
+  For,
+  Show,
+} from "solid-js";
 import type { Task } from "@/types/index.js";
 import { getTasks } from "@/services/api.js";
 import { TaskCard } from "./TaskCard.js";
 
 interface TaskListProps {
   onTaskClick: (task: Task) => void;
+  refreshTrigger?: number;
 }
 
 export const TaskList: Component<TaskListProps> = (props) => {
@@ -30,6 +38,13 @@ export const TaskList: Component<TaskListProps> = (props) => {
 
   onMount(() => {
     loadTasks();
+  });
+
+  // Reload tasks when refreshTrigger changes
+  createEffect(() => {
+    if (props.refreshTrigger !== undefined && props.refreshTrigger > 0) {
+      loadTasks();
+    }
   });
 
   return (

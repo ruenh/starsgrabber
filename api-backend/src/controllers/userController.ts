@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { getUserProfile } from "../services/userService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Get user profile

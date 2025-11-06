@@ -164,8 +164,8 @@ nano .env
 Заполни:
 
 ```env
-VITE_API_URL=https://твой_домен.com/api
-VITE_BOT_USERNAME=твой_бот_username
+VITE_API_URL=https://api.odindindindun.ru
+VITE_BOT_USERNAME=catcherstarsbot
 ```
 
 **Важно**: `VITE_BOT_USERNAME` без символа `@`
@@ -185,19 +185,11 @@ nano .env
 ```env
 PORT=3000
 NODE_ENV=production
-
-# Данные из Supabase (Шаг 1.3)
-SUPABASE_URL=https://твой_проект.supabase.co
-SUPABASE_KEY=твой_anon_key
-
-# Придумай случайную строку (минимум 32 символа)
-JWT_SECRET=твой_секретный_ключ_минимум_32_символа
-
-# Твой Bot Token
-BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-
-# Твой Telegram ID (Шаг 4.1)
-ADMIN_TELEGRAM_ID=123456789
+SUPABASE_URL=https://vnpwsfzyzrpojzehvmae.supabase.co
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZucHdzZnp5enJwb2p6ZWh2bWFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MDIzMTMsImV4cCI6MjA3Njk3ODMxM30.jyvB4SlNPimetrWCqYg6x5lO09dTIT9TOtTSKMX6VgA
+JWT_SECRET=yazabilsvoyrospisistavlyfanatukakuytoxuynynafutbolke
+BOT_TOKEN=8563495078:AAEFNjsJuIgJntrxjV6Aos0NIt4rbR1uKhw
+ADMIN_TELEGRAM_ID=1327903698
 ```
 
 Сохрани: `Ctrl+O`, `Enter`, `Ctrl+X`
@@ -213,24 +205,14 @@ nano .env
 Заполни:
 
 ```env
-# Тот же Bot Token
-BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-
-# Те же данные Supabase
-SUPABASE_URL=https://твой_проект.supabase.co
-SUPABASE_KEY=твой_anon_key
-
-# URL твоего API
+BOT_TOKEN=8563495078:AAEFNjsJuIgJntrxjV6Aos0NIt4rbR1uKhw
+SUPABASE_URL=https://vnpwsfzyzrpojzehvmae.supabase.co
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZucHdzZnp5enJwb2p6ZWh2bWFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MDIzMTMsImV4cCI6MjA3Njk3ODMxM30.jyvB4SlNPimetrWCqYg6x5lO09dTIT9TOtTSKMX6VgA
 API_URL=http://localhost:3000
-
 NODE_ENV=production
-
-# Твой домен для webhook
-WEBHOOK_DOMAIN=https://твой_домен.com
+WEBHOOK_DOMAIN=https://api.odindindindun.ru
 WEBHOOK_PATH=/webhook
-
-# Тот же Telegram ID
-ADMIN_TELEGRAM_ID=123456789
+ADMIN_TELEGRAM_ID=1327903698
 ```
 
 Сохрани: `Ctrl+O`, `Enter`, `Ctrl+X`

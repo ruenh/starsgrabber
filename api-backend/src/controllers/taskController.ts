@@ -10,7 +10,7 @@ import {
   updateUserBalance,
 } from "../services/transactionService.js";
 import { processReferralBonus } from "../services/referralService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 import axios from "axios";
 
 const BOT_BACKEND_URL = process.env.BOT_BACKEND_URL || "http://localhost:3001";

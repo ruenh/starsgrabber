@@ -1,5 +1,5 @@
 import { NotificationService } from "../services/notificationService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Controller for handling notification requests

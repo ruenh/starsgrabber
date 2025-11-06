@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { VerificationService } from "../services/verificationService.js";
 import { BotActivationService } from "../services/botActivationService.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Verify channel subscription

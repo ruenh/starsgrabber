@@ -1,7 +1,7 @@
 import { supabase } from "../config/supabase.js";
 import { TelegramUser } from "../types/auth.js";
 import { User, UserProfile } from "../types/user.js";
-import { logger } from "../utils/logger.js";
+import logger from "../utils/logger.js";
 
 /**
  * Finds a user by Telegram ID
