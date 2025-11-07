@@ -1,21 +1,29 @@
 import { Navigate, Route, HashRouter } from "@solidjs/router";
-import { For, Component } from "solid-js";
+import { Component } from "solid-js";
 
-import { routes } from "@/navigation/routes.js";
 import { BottomNav } from "@/components/layout/BottomNav.js";
+import { HomePage } from "@/pages/HomePage.js";
+import { ProfilePage } from "@/pages/ProfilePage.js";
+import { ReferralsPage } from "@/pages/ReferralsPage.js";
+import { AdminPage } from "@/pages/AdminPage.js";
+
+const Layout: Component<{ children?: any }> = (props) => {
+  return (
+    <div class="app-container">
+      <main class="main-content">{props.children}</main>
+      <BottomNav />
+    </div>
+  );
+};
 
 export const App: Component = () => {
   return (
-    <HashRouter>
-      <div class="app-container">
-        <main class="main-content">
-          <For each={routes}>
-            {(route) => <Route path={route.path} component={route.Component} />}
-          </For>
-          <Route path="*" component={() => <Navigate href="/" />} />
-        </main>
-        <BottomNav />
-      </div>
+    <HashRouter root={Layout}>
+      <Route path="/" component={HomePage} />
+      <Route path="/profile" component={ProfilePage} />
+      <Route path="/referrals" component={ReferralsPage} />
+      <Route path="/admin" component={AdminPage} />
+      <Route path="*" component={() => <Navigate href="/" />} />
     </HashRouter>
   );
 };
